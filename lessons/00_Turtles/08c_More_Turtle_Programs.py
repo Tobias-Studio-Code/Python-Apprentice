@@ -28,8 +28,9 @@ def set_background_image(window, image_name):
     window.bgpic(image_path)
 
 
-turtle.setup(width=600, height=600)
 tina = turtle.Turtle()
+
+
 
 screen = turtle.Screen()
 set_background_image(screen, "emoji.png")
@@ -55,12 +56,10 @@ def sti(turtle, turtle_image_name):
 
 
 
-screen = turtle.Screen()
-screen.setup(width=600, height=600)
 
 t = turtle.Turtle()
 
-sti(t, "emoji2.png")
+sti(t, "pikachu.gif")
 t.penup()
 t.speed(3)
 
@@ -69,5 +68,6 @@ for i in range(4):
     tina.goto(-200, -200)
 
 
-set_background_image(screen, "emoji2.png")
+turtle.setup(width=600, height=600)
+set_background_image(screen, "emoji.png")
 turtle.exitonclick()
