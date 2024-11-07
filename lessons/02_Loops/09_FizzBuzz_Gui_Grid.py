@@ -1,5 +1,4 @@
 """Fizzbuzz Grid
-
 We're going to use a Windowing library, guizero, to create a 10x10 grid of
 numbers, with each number in a separate cell, but we're also going to set the
 color of the number based on the following rules:
@@ -29,7 +28,36 @@ our you can convert the number to a string and iterate over the digits
 """
 from guizero import App, Box, Text
 
+
+
 app = App("Numbers Grid", layout="grid")
+
+count = 1
+
+
+for num in range(10):
+    for A in range(10):
+
+        if count %15 == 0:
+            Text(app, text="🐍", grid=[A,num])  
+
+        elif count %3 == 0:
+            Text(app, text="🍄", grid=[A,num])
+
+        elif count %5 == 0:
+            Text(app, text="🦡", grid=[A,num])
+
+        else: 
+            if count %2 == 0:
+                Text(app,text=str(count), grid=[A,num], color="blue")
+
+            else:
+                Text(app,text=str(count), grid=[A,num], color="red")
+        count+=1
+
+
+
+
 
 # Create a 10x10 grid using nested loops
 # Or you can use a single loop and calculate the row and column

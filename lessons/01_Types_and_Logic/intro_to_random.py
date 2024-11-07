@@ -34,3 +34,9 @@ for i in range(5):
 for i in range(5):
     number = random.uniform(-123.45, 67.89)
     print(number)
+
+
+
+for i in range(50):
+    number = random.uniform(1.2,34.2)
+    print(number)

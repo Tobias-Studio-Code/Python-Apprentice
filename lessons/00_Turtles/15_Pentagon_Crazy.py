@@ -24,7 +24,7 @@ myTurtle.shape("turtle")
 myTurtle.speed(0)
 myTurtle.width(1)
 
-sides = 5
+sides = 4
 angle = 360 / sides
 
 for i in range(360):

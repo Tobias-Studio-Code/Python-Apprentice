@@ -12,7 +12,7 @@ more help
 
 """
 
-
+import random
 import turtle                           # Tell Python we want to work with the turtle
 turtle.setup (width=600, height=600)    # Set the size of the window
 
@@ -22,20 +22,20 @@ tina.shape('turtle')                    # Set the shape of the turtle to a turtl
 tina.speed(2)                           # Make the turtle move as fast, but not too fast. 
 
 
-forwards = [ ... ]
-lefts = [ ... ]
-colors = [  ... ]
-
-for  i in range(8):
-
-    forward = ...
-    left = ...
-    color = ...
+forwards = [50,100,25,235,234,25,123,152,3,25,23,25,50,100,25,23,52,51,42,52,23,125,232,52]
+lefts = [50,100,25,23,52,51,42,52,23,125,232,52,50,100,25,23,52,51,42,52,23,125,232,52]
+colors = [
+    'red','green','blue','green','purple','red','green','blue','green','purple','red','green','red','green','blue','green','purple','red','green','blue','green','purple','red','green'
+]
 
 
-    tina.color(color)
-    tina.forward(forward)
-    tina.left(left)
+for i in range(len(colors)):
+
+    tina.color(colors[i])
+    tina.forward(forwards[i])
+    tina.left(lefts[i])
+
+    
 
 turtle.exitonclick()  
 

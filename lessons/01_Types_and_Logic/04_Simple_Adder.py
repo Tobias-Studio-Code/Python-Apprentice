@@ -22,4 +22,14 @@ at the comments and the code snippets in the previous lessons, like
 # Display the sum of the two numbers 
 
 # Keep the window open
+from tkinter import messagebox, simpledialog, Tk
 
+def enter_input(inputb):
+    messagebox.QUESTION
+    if inputb == inputb:
+        messagebox.showinfo("title",inputb)
+
+inputb = simpledialog.askinteger("Title", "Enter your input")
+
+
+enter_input(inputb)
